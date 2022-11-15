@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-application-dev-service
+spec:
+  selector:
+    app: demo-application-dev
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
